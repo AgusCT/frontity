@@ -52,6 +52,10 @@ const settings: Settings = [
   {
     name: "switch",
     packages: ["e2e-switch"]
+  },
+  {
+    name: "tiny-router",
+    packages: ["e2e-tiny-router"]
   }
 ];
 
