@@ -55,7 +55,17 @@ const settings: Settings = [
   },
   {
     name: "tiny-router",
-    packages: ["e2e-tiny-router"]
+    packages: [
+      "e2e-tiny-router",
+      {
+        name: "@frontity/tiny-router",
+        state: { router: { autoFetch: false } }
+      },
+      {
+        name: "@frontity/wp-source",
+        state: { source: { api: "https://test.frontity.io/wp-json" } }
+      }
+    ]
   }
 ];
 
