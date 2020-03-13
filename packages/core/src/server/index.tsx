@@ -46,6 +46,10 @@ export default ({ packages }): ReturnType<Koa["callback"]> => {
   // Return Frontity favicon for favicon.ico.
   app.use(get("/favicon.ico", serve("./")));
 
+  app.use(get("/icon.png", serve("./")));
+  app.use(get("/manifest.json", serve("./")));
+  app.use(get("/pwabuilder-sw.js", serve("./")));
+  
   // Frontity server rendering.
   app.use(async (ctx, next) => {
     // Get module chunk stats.
